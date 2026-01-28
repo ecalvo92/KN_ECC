@@ -163,6 +163,20 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Template\css\bootstrap.min.css" />
+    <Content Include="Template\css\fullcalendar.css" />
+    <Content Include="Template\css\lineicons.css" />
+    <Content Include="Template\css\main.css" />
+    <Content Include="Template\css\materialdesignicons.min.css" />
+    <Content Include="Template\js\bootstrap.bundle.min.js" />
+    <Content Include="Template\js\Chart.min.js" />
+    <Content Include="Template\js\dynamic-pie-chart.js" />
+    <Content Include="Template\js\fullcalendar.js" />
+    <Content Include="Template\js\jvectormap.min.js" />
+    <Content Include="Template\js\main.js" />
+    <Content Include="Template\js\moment.min.js" />
+    <Content Include="Template\js\polyfill.js" />
+    <Content Include="Template\js\world-merc.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
