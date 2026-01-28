@@ -15,7 +15,7 @@ namespace KN_WEB.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your applicatión description page.";
 
             return View();
         }
