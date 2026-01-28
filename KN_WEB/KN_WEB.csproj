@@ -168,6 +168,8 @@
     <Content Include="Template\css\lineicons.css" />
     <Content Include="Template\css\main.css" />
     <Content Include="Template\css\materialdesignicons.min.css" />
+    <Content Include="Template\images\logo.svg" />
+    <Content Include="Template\images\profile-image.png" />
     <Content Include="Template\js\bootstrap.bundle.min.js" />
     <Content Include="Template\js\Chart.min.js" />
     <Content Include="Template\js\dynamic-pie-chart.js" />
@@ -191,6 +193,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Template\fonts\lineicons.ttf" />
+    <Content Include="Template\fonts\lineicons.woff" />
+    <Content Include="Template\fonts\lineicons.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
