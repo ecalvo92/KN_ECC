@@ -16,6 +16,10 @@ body {
     background: #f1f5f9;
 }
 
+.body-color {
+    background: rgba(54, 92, 245, 0.1)!important;
+}
+
 * {
     margin: 0;
     padding: 0;

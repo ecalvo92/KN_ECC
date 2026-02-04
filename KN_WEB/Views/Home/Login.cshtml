@@ -3,5 +3,70 @@
     Layout = "~/Views/Shared/_LayoutExterno.cshtml";
 }
 
-<h2>Login</h2>
+<div class="row g-0 auth-row mt-5 me-5">
+    <div class="col-lg-6">
+        <div class="auth-cover-wrapper bg-primary-100">
+            <div class="auth-cover">
+                <div class="title text-center">
+                    <h1 class="text-primary mb-10">Welcome Back</h1>
+                    <p class="text-medium">
+                        Sign in to your Existing account to continue
+                    </p>
+                </div>
+                <div class="cover-image">
+                    <img src="~/Template/images/signin-image.svg" alt="" />
+                </div>
+                <div class="shape-image">
+                    <img src="~/Template/images/shape.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="signin-wrapper">
+            <div class="form-wrapper">
+                <h3 class="mb-15">Inciar Sesión</h3>
+               
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-style-1">
+                                <label>Identificación</label>
+                                <input type="text" placeholder="Identificación" />
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                            <div class="input-style-1">
+                                <label>Contraseña</label>
+                                <input type="password" placeholder="Contraseña" />
+                            </div>
+                        </div>
 
+                        <div class="col-xxl-12 col-lg-12 col-md-12">
+                            <div class="text-start text-md-end text-lg-start text-xxl-end mb-30">
+                                <a href="reset-password.html" class="hover-underline">
+                                    Olvidó su contraseña?
+                                </a>
+                            </div>
+                        </div>
+ 
+                        <div class="col-12">
+                            <div class="button-group d-flex justify-content-center flex-wrap">
+                                <button class="main-btn primary-btn btn-hover w-100 text-center">
+                                    Procesar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="singin-option pt-40">                
+                    <p class="text-sm text-medium text-dark text-center">
+                        No tiene una cuenta?
+                        <a href="signup.html">Registrarse</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
