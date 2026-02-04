@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,7 @@
     <Content Include="Template\images\profile-image.png" />
     <Content Include="Template\images\shape.svg" />
     <Content Include="Template\images\signin-image.svg" />
+    <Content Include="Template\images\signup-image.svg" />
     <Content Include="Template\js\bootstrap.bundle.min.js" />
     <Content Include="Template\js\Chart.min.js" />
     <Content Include="Template\js\dynamic-pie-chart.js" />
@@ -165,12 +167,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutExterno.cshtml" />
+    <Content Include="Views\Home\Registro.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
