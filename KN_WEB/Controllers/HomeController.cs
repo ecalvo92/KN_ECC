@@ -47,5 +47,21 @@ namespace KN_WEB.Controllers
 
         #endregion
 
+        #region Recuperar Contraseña
+
+        [HttpGet]
+        public ActionResult RecuperarContrasenna()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult RecuperarContrasenna(UsuarioModel modelo)
+        {
+            return View();
+        }
+
+        #endregion
+
     }
 }

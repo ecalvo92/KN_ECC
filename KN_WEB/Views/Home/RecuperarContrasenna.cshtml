@@ -11,7 +11,7 @@
                 <div class="title text-center">
                     <h1 class="text-primary mb-10">Bienvenid@@</h1>
                     <p class="text-medium">
-                        Inicia sesión para continuar
+                        Te enviaremos un correo electrónico
                     </p>
                 </div>
                 <div class="cover-image">
@@ -25,12 +25,12 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="signin-wrapper">
+        <div class="signup-wrapper">
             <div class="form-wrapper">
-                <h3 class="mb-15">Inciar Sesión</h3>
-               
-                @using(Html.BeginForm("Login","Home"))
-                { 
+                <h3 class="mb-15">Recupear el Acceso</h3>
+
+                @using (Html.BeginForm("RecuperarContrasenna", "Home"))
+                {
                     <div class="row">
                         <div class="col-12">
                             <div class="input-style-1">
@@ -38,22 +38,7 @@
                                 @Html.TextBoxFor(m => m.Identificacion, new { @placeholder = "Identificación" })
                             </div>
                         </div>
-    
-                        <div class="col-12">
-                            <div class="input-style-1">
-                                <label>Contraseña</label>
-                                @Html.TextBoxFor(m => m.Contrasenna, new { @type = "password", @placeholder = "Contraseña" })
-                            </div>
-                        </div>
 
-                        <div class="col-xxl-12 col-lg-12 col-md-12">
-                            <div class="text-start text-md-end text-lg-start text-xxl-end mb-30">
-                                <a href="@Url.Action("RecuperarContrasenna","Home")" class="hover-underline">
-                                    Olvidó su contraseña?
-                                </a>
-                            </div>
-                        </div>
- 
                         <div class="col-12">
                             <div class="button-group d-flex justify-content-center flex-wrap">
                                 <button type="submit" class="main-btn primary-btn btn-hover w-100 text-center">
@@ -64,10 +49,11 @@
                     </div>
                 }
 
-                <div class="singin-option pt-40">                
+                <div class="singup-option pt-40">
+
                     <p class="text-sm text-medium text-dark text-center">
-                        No tiene una cuenta?
-                        <a href="@Url.Action("Registro","Home")">Regístrate</a>
+                        Ya tiene una cuenta?
+                        <a href="@Url.Action("Login","Home")">Iniciar Sesión</a>
                     </p>
                 </div>
             </div>
