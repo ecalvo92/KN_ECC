@@ -1,4 +1,5 @@
-﻿using KN_WEB.Models;
+﻿using KN_WEB.EntityFramework;
+using KN_WEB.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,19 @@ namespace KN_WEB.Controllers
         [HttpPost]
         public ActionResult Registro(UsuarioModel model)
         {
+            using (var context = new KN_DBEntities())
+            {
+                var tabla = new tUsuario
+                {
+                    Identificacion = model.Identificacion,
+                    Nombre = model.Nombre,
+                    Contrasenna = model.Contrasenna
+                };
+
+                context.tUsuario.Add(tabla);
+                context.SaveChanges();
+            }
+        
             return View();
         }
 
