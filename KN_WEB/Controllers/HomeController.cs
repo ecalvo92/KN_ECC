@@ -26,8 +26,20 @@ namespace KN_WEB.Controllers
 
         [HttpPost]
         public ActionResult Login(UsuarioModel modelo)
-        {
-            return View();
+        {            
+            using (var context = new KN_DBEntities())
+            {
+                var result = context.tUsuario.Where(p => p.Identificacion == modelo.Identificacion 
+                                                       && p.Contrasenna == modelo.Contrasenna).FirstOrDefault();
+
+                if (result == null)
+                {
+                    ViewBag.Mensaje = "Usuario o contraseña incorrecta.";
+                    return View();
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
         }
 
         #endregion

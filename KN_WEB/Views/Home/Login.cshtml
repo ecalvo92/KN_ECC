@@ -27,10 +27,11 @@
     <div class="col-lg-6">
         <div class="signin-wrapper">
             <div class="form-wrapper">
+
                 <h3 class="mb-15">Inciar Sesión</h3>
-               
-                @using(Html.BeginForm("Login","Home"))
-                { 
+
+                @using (Html.BeginForm("Login", "Home"))
+                {
                     <div class="row">
                         <div class="col-12">
                             <div class="input-style-1">
@@ -38,11 +39,15 @@
                                 @Html.TextBoxFor(m => m.Identificacion, new { @placeholder = "Identificación" })
                             </div>
                         </div>
-    
+
                         <div class="col-12">
                             <div class="input-style-1">
                                 <label>Contraseña</label>
                                 @Html.TextBoxFor(m => m.Contrasenna, new { @type = "password", @placeholder = "Contraseña" })
+
+                                <div class="text-danger w-100">
+                                    @ViewBag.Mensaje
+                                </div>
                             </div>
                         </div>
 
@@ -53,7 +58,7 @@
                                 </a>
                             </div>
                         </div>
- 
+
                         <div class="col-12">
                             <div class="button-group d-flex justify-content-center flex-wrap">
                                 <button type="submit" class="main-btn primary-btn btn-hover w-100 text-center">
@@ -64,7 +69,7 @@
                     </div>
                 }
 
-                <div class="singin-option pt-40">                
+                <div class="singin-option pt-40">
                     <p class="text-sm text-medium text-dark text-center">
                         No tiene una cuenta?
                         <a href="@Url.Action("Registro","Home")">Regístrate</a>
