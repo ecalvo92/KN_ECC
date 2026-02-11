@@ -182,6 +182,7 @@
     <Content Include="Template\js\dynamic-pie-chart.js" />
     <Content Include="Template\js\fullcalendar.js" />
     <Content Include="Template\js\jvectormap.min.js" />
+    <Content Include="Template\js\login.js" />
     <Content Include="Template\js\main.js" />
     <Content Include="Template\js\moment.min.js" />
     <Content Include="Template\js\polyfill.js" />
