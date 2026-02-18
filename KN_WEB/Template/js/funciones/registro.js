@@ -7,6 +7,10 @@
       Nombre: {
         required: true
       },
+      CorreoElectronico: {
+        required: true,
+        email: true
+      },
       Contrasenna: {
         required: true
       }
@@ -17,6 +21,10 @@
       },
       Nombre: {
         required: "Campo requerido"
+      },
+      CorreoElectronico: {
+        required: "Campo requerido",
+        email: "Formato incorrecto"
       },
       Contrasenna: {
         required: "Campo requerido"

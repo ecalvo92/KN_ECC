@@ -1,9 +1,6 @@
 ﻿using KN_WEB.EntityFramework;
 using KN_WEB.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace KN_WEB.Controllers
@@ -26,11 +23,14 @@ namespace KN_WEB.Controllers
 
         [HttpPost]
         public ActionResult Login(UsuarioModel modelo)
-        {            
+        {
             using (var context = new KN_DBEntities())
             {
-                var result = context.tUsuario.Where(p => p.Identificacion == modelo.Identificacion 
-                                                       && p.Contrasenna == modelo.Contrasenna).FirstOrDefault();
+                //var result = context.tUsuario.Where(p => p.CorreoElectronico == modelo.CorreoElectronico 
+                //                                      && p.Contrasenna == modelo.Contrasenna
+                //                                      && p.Estado == true).FirstOrDefault();
+
+                var result = context.IniciarSesion(modelo.CorreoElectronico, modelo.Contrasenna).FirstOrDefault();
 
                 if (result == null)
                 {
@@ -57,17 +57,21 @@ namespace KN_WEB.Controllers
         {
             using (var context = new KN_DBEntities())
             {
-                var tabla = new tUsuario
-                {
-                    Identificacion = model.Identificacion,
-                    Nombre = model.Nombre,
-                    Contrasenna = model.Contrasenna
-                };
+                //var tabla = new tUsuario
+                //{
+                //    Identificacion = model.Identificacion,
+                //    Nombre = model.Nombre,
+                //    Contrasenna = model.Contrasenna,
+                //    CorreoElectronico = model.CorreoElectronico,
+                //    Estado = true
+                //};
 
-                context.tUsuario.Add(tabla);
-                context.SaveChanges();
+                //context.tUsuario.Add(tabla);
+                //context.SaveChanges();
+
+                context.RegistrarUsuario(model.Identificacion, model.Contrasenna, model.Nombre, model.CorreoElectronico);
             }
-        
+
             return View();
         }
 

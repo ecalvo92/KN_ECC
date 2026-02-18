@@ -48,6 +48,13 @@
 
                         <div class="col-12">
                             <div class="input-style-1">
+                                <label>Correo Electrónico</label>
+                                @Html.TextBoxFor(m => m.CorreoElectronico, new { @placeholder = "Correo Electrónico" })
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-style-1">
                                 <label>Contraseña</label>
                                 @Html.TextBoxFor(m => m.Contrasenna, new { @type = "password", @placeholder = "Contraseña" })
                             </div>
