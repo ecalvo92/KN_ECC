@@ -3368,7 +3368,7 @@ h6,
                         width: 46px;
                         height: 46px;
                         border-radius: 50%;
-                        margin-right: 14px;
+                        margin-left: 14px;
                         position: relative;
                     }
 
@@ -6506,4 +6506,8 @@ h6,
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+.SoloLectura {
+    cursor: not-allowed;
 }

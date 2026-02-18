@@ -38,6 +38,7 @@ namespace KN_WEB.Controllers
                     return View();
                 }
 
+                Session["Nombre"] = result.Nombre;
                 return RedirectToAction("Index", "Home");
             }
         }

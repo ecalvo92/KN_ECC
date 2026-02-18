@@ -35,14 +35,14 @@
                         <div class="col-12">
                             <div class="input-style-1">
                                 <label>Identificación</label>
-                                @Html.TextBoxFor(m => m.Identificacion, new { @placeholder = "Identificación" })
+                                @Html.TextBoxFor(m => m.Identificacion, new { @placeholder = "Identificación", @onkeyup = "ConsultarNombre()" })
                             </div>
                         </div>
 
                         <div class="col-12">
                             <div class="input-style-1">
                                 <label>Nombre</label>
-                                @Html.TextBoxFor(m => m.Nombre, new { @placeholder = "Nombre" })
+                                @Html.TextBoxFor(m => m.Nombre, new { @placeholder = "Nombre", @readOnly = "true", @class="SoloLectura" })
                             </div>
                         </div>
 
