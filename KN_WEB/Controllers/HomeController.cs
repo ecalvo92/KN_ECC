@@ -34,7 +34,7 @@ namespace KN_WEB.Controllers
 
                 if (result == null)
                 {
-                    ViewBag.Mensaje = "Usuario o contraseña incorrecta.";
+                    ViewBag.Mensaje = "Su información no se autenticó correctamente.";
                     return View();
                 }
 
@@ -67,12 +67,18 @@ namespace KN_WEB.Controllers
                 //};
 
                 //context.tUsuario.Add(tabla);
-                //context.SaveChanges();
+                //var result = context.SaveChanges();
 
-                context.RegistrarUsuario(model.Identificacion, model.Contrasenna, model.Nombre, model.CorreoElectronico);
+                var result = context.RegistrarUsuario(model.Identificacion, model.Contrasenna, model.Nombre, model.CorreoElectronico);
+
+                if (result <= 0)
+                {
+                    ViewBag.Mensaje = "Su información no se registró correctamente.";
+                    return View();
+                }
+
+                return RedirectToAction("Login", "Home");
             }
-
-            return View();
         }
 
         #endregion
