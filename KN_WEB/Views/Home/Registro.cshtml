@@ -29,7 +29,7 @@
             <div class="form-wrapper">
                 <h3 class="mb-15">Crear una Cuenta</h3>
 
-                @using (Html.BeginForm("Registro", "Home"))
+                @using (Html.BeginForm("Registro", "Home", FormMethod.Post, new { @id = "FormRegistro" }))
                 {
                     <div class="row">
                         <div class="col-12">
@@ -74,3 +74,5 @@
         </div>
     </div>
 </div>
+
+<script src="~/Template/js/funciones/registro.js"></script>
