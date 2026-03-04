@@ -17,5 +17,7 @@ namespace KN_WEB.EntityFramework
         public string Identificacion { get; set; }
         public string Nombre { get; set; }
         public string CorreoElectronico { get; set; }
+        public int ConsecutivoRol { get; set; }
+        public string Descripcion { get; set; }
     }
 }
