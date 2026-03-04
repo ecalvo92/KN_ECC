@@ -11,7 +11,7 @@ namespace KN_WEB.EntityFramework
 {
     using System;
     
-    public partial class IniciarSesion_Result
+    public partial class ValidarCorreo_Result
     {
         public int Consecutivo { get; set; }
         public string Identificacion { get; set; }

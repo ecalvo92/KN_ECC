@@ -151,6 +151,9 @@
     <Compile Include="EntityFramework\tUsuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="EntityFramework\ValidarCorreo_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +187,7 @@
     <Content Include="Template\js\Chart.min.js" />
     <Content Include="Template\js\dynamic-pie-chart.js" />
     <Content Include="Template\js\fullcalendar.js" />
+    <Content Include="Template\js\funciones\recuperarContrasenna.js" />
     <Content Include="Template\js\funciones\registro.js" />
     <Content Include="Template\js\jvectormap.min.js" />
     <Content Include="Template\js\funciones\login.js" />
@@ -191,6 +195,9 @@
     <Content Include="Template\js\moment.min.js" />
     <Content Include="Template\js\polyfill.js" />
     <Content Include="Template\js\world-merc.js" />
+    <Content Include="Template\RecuperarContrasenna.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
