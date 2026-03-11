@@ -66,11 +66,13 @@ GO
 
 SET IDENTITY_INSERT [dbo].[tUsuario] ON 
 GO
-INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (5, N'305520310', N'ZDJRSUNA', N'ALFARO SALAZAR FRANCINNI DE LOS ANGELES', N'falfaro20310@ufide.ac.cr', 1, 1)
+INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (5, N'305520310', N'YDTSQEVU', N'ALFARO SALAZAR FRANCINNI DE LOS ANGELES', N'falfaro20310@ufide.ac.cr', 1, 1)
 GO
-INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (6, N'113470086', N'70086', N'CONTRERAS ANGULO STEPHANIE PAMELA', N'scontreras70086@ufide.ac.cr', 1, 1)
+INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (6, N'113470086', N'UQJDETVV', N'CONTRERAS ANGULO STEPHANIE PAMELA', N'scontreras70086@ufide.ac.cr', 1, 1)
 GO
 INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (7, N'304590415', N'90415', N'CALVO CASTILLO EDUARDO JOSE', N'ecalvo90415@ufide.ac.cr', 1, 1)
+GO
+INSERT [dbo].[tUsuario] ([Consecutivo], [Identificacion], [Contrasenna], [Nombre], [CorreoElectronico], [Estado], [ConsecutivoRol]) VALUES (8, N'118290068', N'Saprissa', N'MADRIGAL DELGADO ANNDY JOSSUE', N'amadrigal90068@ufide.ac.cr', 1, 1)
 GO
 SET IDENTITY_INSERT [dbo].[tUsuario] OFF
 GO
