@@ -1,4 +1,5 @@
 ﻿using KN_WEB.EntityFramework;
+using KN_WEB.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Web.Mvc;
 
 namespace KN_WEB.Controllers
 {
+    [SesionActiva]
     public class ServicioController : Controller
     {
         [HttpGet]

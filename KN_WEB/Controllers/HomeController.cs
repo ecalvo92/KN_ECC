@@ -1,4 +1,5 @@
 ﻿using KN_WEB.EntityFramework;
+using KN_WEB.Filters;
 using KN_WEB.Models;
 using System;
 using System.Configuration;
@@ -14,6 +15,7 @@ namespace KN_WEB.Controllers
 {
     public class HomeController : Controller
     {
+        [SesionActiva]
         [HttpGet]
         public ActionResult Index()
         {

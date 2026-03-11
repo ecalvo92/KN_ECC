@@ -1,5 +1,5 @@
 ﻿@{
-    var nombre = Session["Nombre"].ToString();
+    var nombre = Session["Nombre"] ?? String.Empty;
 }
 
 <!DOCTYPE html>
