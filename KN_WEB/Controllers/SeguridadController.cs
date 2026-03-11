@@ -1,4 +1,5 @@
 ﻿using KN_WEB.Filters;
+using KN_WEB.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,16 @@ namespace KN_WEB.Controllers
         [HttpGet]
         public ActionResult CambiarAcceso()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CambiarAcceso(CambiarAccesoModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            ViewBag.Mensaje = "Contraseña actualizada correctamente.";
             return View();
         }
     }
