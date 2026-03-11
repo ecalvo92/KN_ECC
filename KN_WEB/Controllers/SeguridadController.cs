@@ -28,6 +28,9 @@ namespace KN_WEB.Controllers
         [HttpPost]
         public ActionResult CambiarAcceso(SeguridadModel model)
         {
+            if (!ModelState.IsValid)
+                return View(model);
+
             using (var context = new KN_DBEntities())
             {
                 var consecutivoSesion = int.Parse(Session["Consecutivo"].ToString());
