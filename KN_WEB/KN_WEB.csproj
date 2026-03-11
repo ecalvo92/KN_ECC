@@ -130,6 +130,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SeguridadController.cs" />
     <Compile Include="Controllers\ServicioController.cs" />
     <Compile Include="EntityFramework\IniciarSesion_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -239,6 +240,7 @@
     <Content Include="Views\Home\Registro.cshtml" />
     <Content Include="Views\Home\RecuperarContrasenna.cshtml" />
     <Content Include="Views\Servicio\ConsultarServicios.cshtml" />
+    <Content Include="Views\Seguridad\CambiarAcceso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

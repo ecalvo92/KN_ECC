@@ -141,6 +141,18 @@ namespace KN_WEB.Controllers
 
         #endregion
 
+        #region Cerrar Sesión
+
+        [SesionActiva]
+        [HttpGet]
+        public ActionResult CerrarSesion()
+        {
+            Session.Clear();
+            return RedirectToAction("Login", "Home");
+        }
+
+        #endregion
+
         private string GenerarContrasena()
         {
             int longitud = 8;
