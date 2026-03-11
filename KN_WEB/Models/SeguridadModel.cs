@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KN_WEB.Models
 {
-    public class CambiarAccesoModel
+    public class SeguridadModel
     {
         [Required(ErrorMessage = "La contraseña nueva es requerida.")]
         public string ContrasennaNueva { get; set; }
